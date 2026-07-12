@@ -52,15 +52,13 @@
         }
 
         /* Красные масти (червы и бубны) */
-        .card:has(♥),
-        .card:has(♦) {
+        .card.red {
             color: #cc0000;
         }
 
         /* Черные масти (пики и трефы) */
-        .card:has(♠),
-        .card:has(♣) {
-            color: #000;
+        .card.black {
+            color: #000000;
         }
     </style>
 </head>
@@ -72,20 +70,20 @@
 
         <h2>Player 1</h2>
         <div class="hand">
-            <span class="card">A&spades;</span>
-            <span class="card">K&hearts;</span>
-            <span class="card">Q&diams;</span>
-            <span class="card">J&clubs;</span>
-            <span class="card">10&spades;</span>
+            <span class="card black">A&spades;</span>
+            <span class="card red">K&hearts;</span>
+            <span class="card red">Q&diams;</span>
+            <span class="card black">J&clubs;</span>
+            <span class="card black">10&spades;</span>
         </div>
 
         <h2>Player 2</h2>
         <div class="hand">
-            <span class="card">9&hearts;</span>
-            <span class="card">8&diams;</span>
-            <span class="card">7&clubs;</span>
-            <span class="card">6&spades;</span>
-            <span class="card">5&hearts;</span>
+            <span class="card red">9&hearts;</span>
+            <span class="card red">8&diams;</span>
+            <span class="card black">7&clubs;</span>
+            <span class="card black">6&spades;</span>
+            <span class="card red">5&hearts;</span>
         </div>
     </body>
 </body>
